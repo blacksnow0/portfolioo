@@ -3,9 +3,9 @@ import imageSrc from "../Assets/profile_background.png";
 
 function Hero() {
   return (
-    <section className="relative h-screen bg-black text-white overflow-hidden">
+    <section className="relative h-screen bg-black text-white z-10">
       {/* Repeated "Portfolio" Text */}
-      <div className="flex flex-col justify-center items-center h-[90%] bg-customGreen pointer-events-none ">
+      <div className="flex flex-col justify-center items-center h-[85%] bg-customGreen pointer-events-none text-center">
         <h1 className="mt-60 mb-8 text-5xl lg:text-9xl font-serif font-bold text-gray-300 leading-none tracking-wider">
           PORTFOLIO
         </h1>
@@ -22,23 +22,20 @@ function Hero() {
         </h1>
       </div>
 
-      {/* Adjusted Image Position */}
-      <div className="absolute lg:top-1/4 lg:left-1/5 mx-32">
-        <img src={imageSrc} alt="profile image" className="w-2/4" />
+      {/* Adjusted Image Position - Hide on mobile */}
+      <div className="absolute lg:top-1/4 lg:left-1/5 mx-32 hidden sm:block">
+        <div className="flex justify-between items">
+          <img src={imageSrc} alt="profile image" className="w-2/4" />
+          <div className="flex flex-col justify-between  ml-8">
+            <p className="font-caveat text-yellow-500 text-4xl mb-4">
+              Poetry In Motion
+            </p>
+            <button className="px-6 py-3 rounded-full bg-red-500 text-white hover:bg-red-600 transition-colors">
+              See Work
+            </button>
+          </div>
+        </div>
       </div>
-
-      <p
-        className=" text-sm text-gray-300 bg-black/20  py-2 shadow-lg max-w-xs md:text-base tracking-widest px-1"
-        style={{
-          bottom: "2%",
-          left: "0",
-          position: "absolute",
-          zIndex: 20,
-        }}
-      >
-        Hi! I'm Himanshu, a passionate web developer building modern and
-        responsive web applications.
-      </p>
     </section>
   );
 }
