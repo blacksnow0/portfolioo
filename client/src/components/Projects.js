@@ -5,7 +5,7 @@ import project3 from "../Assets/project3.png";
 
 function Projects() {
   return (
-    <section className="bg-black text-white py-16">
+    <section className="bg-customGreen text-white py-16">
       <div className="text-center mb-16">
         <h1 className="text-5xl font-bold">My Projects</h1>
         <p className="mt-4 text-lg text-gray-400">
