@@ -23,7 +23,7 @@ function Hero() {
       </div>
 
       {/* Adjusted Image Position - Hide on mobile */}
-      <div className="absolute lg:top-1/4 lg:left-1/5 mx-32 hidden sm:block">
+      <div className="absolute lg:top-1/4 lg:left-1/5 mx-32 hidden sm:block ">
         <div className="flex justify-between items">
           <img src={imageSrc} alt="profile" className="w-2/4" />
           <div className="flex flex-col justify-between  ml-8">

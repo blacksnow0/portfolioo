@@ -77,7 +77,7 @@ function Projects() {
               New Urvashi
             </h3>
             <a
-              href="newurvashibadrinath.com"
+              href="https://newurvashibadrinath.com"
               target="_blank"
               rel="noreferrer"
               className="mt-4 px-6 py-2 bg-red-400 text-white font-bold rounded-lg shadow-md hover:bg-red-500"
