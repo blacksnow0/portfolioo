@@ -1,7 +1,5 @@
 import React from "react";
 import imageSrc from "../Assets/profile_background.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFan } from "@fortawesome/free-solid-svg-icons";
 
 function Hero() {
   return (

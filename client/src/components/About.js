@@ -10,13 +10,16 @@ import {
 
 function About() {
   return (
-    <section className="h-auto md:h-screen">
-      <div className="h-full mt-16 bg-offWhite flex flex-col md:flex-row justify-around items-center px-4 md:px-20 py-6 md:py-0">
+    <section className="h-auto md:h-screen bg-customGreen">
+      <div className="h-[80%] md:mt-32 bg-offWhite flex flex-col md:flex-row justify-around items-center px-4 md:px-20 py-6 md:py-0">
         {/* Text Section */}
         <div className="text-center md:text-left space-y-6 max-w-lg">
-          <h1 className="text-4xl md:text-7xl font-caveat font-bold leading-tight">
+          <h1 className="text-4xl md:text-7xl font-caveat font-bold leading-tight tracking-wider">
             Hello, <br /> I'm{" "}
-            <span className="text-black font-caveat">Himanshu</span>!
+            <span className="text-black font-caveat tracking-wider">
+              Himanshu
+            </span>
+            !
           </h1>
           <p className="text-md md:text-lg leading-relaxed">
             I am a passionate developer focused on creating impactful web
@@ -37,8 +40,8 @@ function About() {
         </div>
 
         {/* Image Section */}
-        <div className="mt-10 md:mt-0">
-          <div className="w-full md:w-96 bg-black text-white rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition-transform">
+        <div className="mt-10 md:mt-64 z-10">
+          <div className="w-full md:w-96 bg-black text-white rounded-lg shadow-xl overflow-hidden mr-16">
             {/* Profile Image */}
             <div className="relative">
               <img
@@ -49,8 +52,8 @@ function About() {
             </div>
 
             {/* Contact Details */}
-            <div className="p-6 text-center space-y-4">
-              <h2 className="text-2xl md:text-4xl text-offWhite font-bold font-caveat">
+            <div className="p-6 pl-16 text-start space-y-4">
+              <h2 className="text-2xl md:text-4xl text-offWhite font-bold font-caveat tracking-wider">
                 Contact
               </h2>
               <div className="space-y-2">
