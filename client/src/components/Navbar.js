@@ -76,7 +76,7 @@ function Navbar() {
         <li>
           <a
             href="/about"
-            className="px-5 py-2 bg-yellow-500 rounded-full hover:bg-yellow-600 transition-colors"
+            className="px-5 py-2 bg-yellow-600 rounded-full hover:bg-yellow-500 transition-colors"
           >
             Get in touch!
           </a>
