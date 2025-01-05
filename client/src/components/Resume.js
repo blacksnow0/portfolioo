@@ -80,7 +80,7 @@ function Resume() {
       </div>
 
       {/* Right Section: Resume Highlight and Technical Skills */}
-      <div className="md:w-1/2 flex flex-col justify-around space-y-10 mt-20 z-20">
+      <div className="md:w-1/2 flex flex-col justify-around space-y-10 mt-48 z-20">
         <div className="space-y-6">
           <h1 className="text-5xl  text-yellow-600 font-bold font-serif mb-4">
             Technical skills
