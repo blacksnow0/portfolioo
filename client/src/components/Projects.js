@@ -5,67 +5,86 @@ import project3 from "../Assets/project3.png";
 
 function Projects() {
   return (
-    <section className="bg-customGreen text-white py-16">
+    <section className="bg-customGreen text-white py-20 px-6 md:px-20">
       <div className="text-center mb-16">
-        <h1 className="text-5xl font-bold">My Projects</h1>
-        <p className="mt-4 text-lg text-gray-400">
-          Explore the journey of my work
+        <h1 className="text-5xl font-bold font-serif text-offWhite drop-shadow-xl tracking-widest">
+          My Projects
+        </h1>
+        <p className="mt-4 text-lg text-offWhite">
+          A showcase of my journey through code and creativity.
         </p>
       </div>
 
-      <div className="space-y-16">
-        {/* Project 1 */}
-        <div className="flex items-center justify-between space-x-8">
-          <div className="w-1/2">
-            <h3 className="text-3xl font-semibold text-yellow-500">
-              Project 1
-            </h3>
-            <p className="mt-4 text-gray-400">
-              This is a description of project 1, explaining the scope and goals
-              of the work.
-            </p>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div className="relative group">
+          <div className="overflow-hidden  shadow-lg">
+            <img
+              src={project1}
+              alt="Project 1"
+              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
           </div>
-          <img
-            src={project1}
-            alt="Project 1"
-            className="w-1/2 rounded-lg shadow-lg transform transition-transform hover:scale-110"
-          />
+          <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
+            <h3 className="text-2xl font-semibold text-offWhite drop-shadow-xl">
+              BurnMetric
+            </h3>
+
+            <a
+              href="https://burn-metrics.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-4 px-6 py-2 bg-red-400 text-white font-bold rounded-lg shadow-md hover:bg-red-500"
+            >
+              View Details
+            </a>
+          </div>
         </div>
 
-        {/* Project 2 */}
-        <div className="flex items-center justify-between space-x-8">
-          <div className="w-1/2">
-            <h3 className="text-3xl font-semibold text-yellow-500">
-              Project 2
-            </h3>
-            <p className="mt-4 text-gray-400">
-              Description of project 2, detailing the tools used and the
-              challenges overcome.
-            </p>
+        <div className="relative group">
+          <div className="overflow-hidden  shadow-lg">
+            <img
+              src={project2}
+              alt="Project 2"
+              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
           </div>
-          <img
-            src={project2}
-            alt="Project 2"
-            className="w-1/2 rounded-lg shadow-lg transform transition-transform hover:scale-110"
-          />
+          <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
+            <h3 className="text-2xl font-semibold text-offWhite drop-shadow-xl">
+              Chatorita
+            </h3>
+
+            <a
+              href="https://chatorita.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-4 px-6 py-2 bg-red-400 text-white font-bold rounded-lg shadow-md hover:bg-red-500"
+            >
+              View Details
+            </a>
+          </div>
         </div>
 
-        {/* Project 3 */}
-        <div className="flex items-center justify-between space-x-8">
-          <div className="w-1/2">
-            <h3 className="text-3xl font-semibold text-yellow-500">
-              Project 3
-            </h3>
-            <p className="mt-4 text-gray-400">
-              A description of project 3, with a focus on how it improved
-              efficiency.
-            </p>
+        <div className="relative group">
+          <div className="overflow-hidden  shadow-lg">
+            <img
+              src={project3}
+              alt="Project 3"
+              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
           </div>
-          <img
-            src={project3}
-            alt="Project 3"
-            className="w-1/2 rounded-lg shadow-lg transform transition-transform hover:scale-110"
-          />
+          <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
+            <h3 className="text-2xl font-semibold text-offWhite drop-shadow-xl">
+              New Urvashi
+            </h3>
+            <a
+              href="newurvashibadrinath.com"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-4 px-6 py-2 bg-red-400 text-white font-bold rounded-lg shadow-md hover:bg-red-500"
+            >
+              View Details
+            </a>
+          </div>
         </div>
       </div>
     </section>
