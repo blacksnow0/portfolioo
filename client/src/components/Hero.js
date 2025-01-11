@@ -25,7 +25,11 @@ function Hero() {
       {/* Adjusted Image Position - Hide on mobile */}
       <div className="absolute lg:top-1/4 lg:left-1/5 mx-32 hidden sm:block ">
         <div className="flex justify-between items">
-          <img src={imageSrc} alt="profile" className="w-2/4" />
+          <div className="relative w-2/4 rounded-lg overflow-hidden">
+            <img src={imageSrc} alt="profile" className="w-full" />
+            <div className="absolute inset-0 bg-yellow-900 bg-opacity-20"></div>
+          </div>
+
           <div className="flex flex-col justify-between  ml-8">
             <p className="font-caveat text-yellow-500 text-4xl mb-4">
               Poetry In Motion
